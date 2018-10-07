@@ -1,0 +1,15 @@
+#sudo rfcomm connect /dev/rfcomm0 10:00:E8:65:27:DE
+
+#avrdude -p m88  -P /dev/rfcomm0 -c stk500v2 -e -U hfuse:w:0xc6:m -U lfuse:w:0xfd:m -U efuse:w:0x01:m
+#rfcomm bind 0
+#sudo rfcomm connect 0
+#without Bootloader
+#sudo avrdude -p m128  -F -P /dev/rfcomm0 -c stk500v2 -e -U hfuse:w:0xcf:m -U lfuse:w:0xbf:m -U efuse:w:0xfe:m
+#with bootloader @0xf800 4096
+#sudo avrdude -p m128  -F -P /dev/rfcomm0 -c stk500v2 -e -U hfuse:w:0xc2:m -U lfuse:w:0xbf:m -U efuse:w:0xfe:m
+#with bootloader @0xfc00 2048 
+#sudo avrdude -p m128  -F -P /dev/rfcomm0 -c stk500v2 -e -U hfuse:w:0xcc:m -U lfuse:w:0xbf:m -U efuse:w:0xfe:m
+#потери флеша при включении
+sudo avrdude -p m128  -F -P /dev/rfcomm0 -c stk500v2 -e -U hfuse:w:0xc8:m -U lfuse:w:0x3f:m -U efuse:w:0xfe:m
+#ca
+sudo avrdude -p m128 -F -P /dev/rfcomm0 -c stk500v2 -e -U flash:w:svz.hex

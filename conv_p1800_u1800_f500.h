@@ -1,0 +1,9 @@
+#ifndef CONV_P1600_U650_F2400_H
+#define CONV_P1600_U650_F2400_H
+
+#define P_NOM 18000UL
+#define U_NOM 1800
+#define I_NOM 1450
+#define F_NOM (2400*1.25)
+
+#endif // CONV_P1600_U500_F2400_H

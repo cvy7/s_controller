@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo ./mbloader_pc -d /dev/ttyS4 -b 115200 -a 101 -m 11 -p svz.bin
