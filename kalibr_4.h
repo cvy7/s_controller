@@ -1,17 +1,17 @@
 #ifndef KALIBR_1_H
 #define KALIBR_1_H
 
-#define CH0_K 7974UL
+#define CH0_K 7972UL
 #define CH0_S 48
 
-#define CH1_K 7959UL
-#define CH1_S 48
+#define CH1_K 8019UL
+#define CH1_S 52
 
-#define CH2_K 7994UL
-#define CH2_S 52
+#define CH2_K 8014UL
+#define CH2_S 55
 
-#define CH3_K 7946UL
-#define CH3_S 52
+#define CH3_K 7950UL
+#define CH3_S 55
 //0-10v (0-20ma)
 //29- 0v 29502- 10v
 #if 0

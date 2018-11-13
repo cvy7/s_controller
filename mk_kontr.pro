@@ -361,4 +361,6 @@ HEADERS += \
     kalibr_2.h \
     kalibr_3.h \
     config.h \
-    conv_p18000_u1800_f500.h
+    conv_p18000_u1800_f500.h \
+    conv_p1600_u800_f2400.h \
+    kalibr_4.h
