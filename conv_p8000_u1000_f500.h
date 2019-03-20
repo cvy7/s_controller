@@ -1,0 +1,9 @@
+#ifndef CONV_P18000_U1800_F500_H
+#define CONV_P18000_U1800_F500_H
+
+#define P_NOM 8000UL
+#define U_NOM 1000
+#define I_NOM 1100
+#define F_NOM 800
+
+#endif // CONV_P18000_U1800_F500_H

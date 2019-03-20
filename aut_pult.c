@@ -156,11 +156,11 @@ if(usRegCoilsBuf[15]) return;
         conv.command_reset   =INP_RESET;
         conv.command_heat_on =INP_HEAT;
 
-        conv.ps=norm_in(INP_P,P_NOM,0);
+        conv.ps=norm_in(INP_P,P_NOM,0)+norm_in(INP_U,P_NOM,0);
         conv.us=norm_in(INP_U,U_NOM,U_NOM);
     }
 
-    //usRegHoldingBuf[0]=usRegInputBuf[0];
+    //usRegHoldingBuf[0]=usRegInputBuf[1];
     //usRegHoldingBuf[1]=0;
     //usRegHoldingBuf[2]=usRegInputBuf[1];
     //usRegHoldingBuf[0]=0;
