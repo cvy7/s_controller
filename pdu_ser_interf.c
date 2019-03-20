@@ -489,7 +489,7 @@ if(conv_is_received){
     conv_rxp();
 }
 else if(conv_timeout > CONV_TIMEOUT){
-   if(!conv.mestnoe_upr && !conv.conn_err) {
+  if(!conv.mestnoe_upr && !conv.conn_err) {
         conv.conn_err=1;
         conv.err_cod[0]=ERR_CONNECT;
         CONV_err();
