@@ -160,7 +160,7 @@ if(usRegCoilsBuf[15]) return;
         conv.us=norm_in(INP_U,U_NOM,U_NOM);
     }
 
-    //usRegHoldingBuf[0]=usRegInputBuf[1];
+    //usRegHoldingBuf[0]=usRegInputBuf[0];
     //usRegHoldingBuf[1]=0;
     //usRegHoldingBuf[2]=usRegInputBuf[1];
     //usRegHoldingBuf[0]=0;
