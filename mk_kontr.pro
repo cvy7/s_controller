@@ -367,4 +367,8 @@ HEADERS += \
     conv_p8000_u1000_f500.h \
     kalibr_5.h \
     conv_p4000_u800_f1000.h \
-    kalibr_6.h
+    kalibr_6.h \
+    conv_p3200_u650_f2400.h \
+    kalibr_7.h \
+    kalibr_8.h \
+    kalibr_9.h

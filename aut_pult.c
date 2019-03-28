@@ -155,8 +155,11 @@ if(usRegCoilsBuf[15]) return;
         conv.command_ready   =INP_READY;
         conv.command_reset   =INP_RESET;
         conv.command_heat_on =INP_HEAT;
-
+#ifdef TPCH
         conv.ps=norm_in(INP_P,P_NOM,0)+norm_in(INP_U,P_NOM,0);
+#else
+        conv.ps=norm_in(INP_P,P_NOM,0);
+#endif
         conv.us=norm_in(INP_U,U_NOM,U_NOM);
     }
 
